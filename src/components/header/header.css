@@ -1,0 +1,55 @@
+.header {
+    height: 10vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.header .categories{
+    display: flex;
+    gap: 2rem;
+   
+}
+.header .categories a{
+    margin-top: .4rem;
+    color: white;
+}
+.header .categories a{
+    font-size: 30px;
+    color: white;
+    padding-left: 1rem;
+    text-decoration: none;
+    
+}
+.header .login{
+    color: white;
+    font-size: 25px;
+    margin-right: 1rem;
+}
+.categories a:hover,.login:hover,.categories a:hover{
+    color: rgba(165, 42, 42, 0.979);
+    cursor: pointer;
+}
+@media only screen and (max-width:500px){
+    html{
+        font-size: 6px;
+    }
+    .header .categories{
+        display: flex;
+        gap: .9rem;
+       
+    }
+    .header .categories a{
+        font-size: 13px;
+        color: white;
+        padding-left: 1rem;
+        text-decoration: none;
+        
+    }
+    .header .login{
+        color: white;
+        font-size: 25px;
+        margin-right: 1rem;
+    }
+}

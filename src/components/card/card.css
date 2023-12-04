@@ -1,0 +1,40 @@
+.card-css{
+    height: 400px ;
+    width: 300px ;
+    transition: all 0.5s;
+   
+}
+.card-css img{
+    border-radius: 10px;
+}
+.card-css:hover{
+    transform: scale(1.1);
+}
+.details-on-hover{
+    position: absolute;
+    bottom: 5rem;
+    color: white;
+    padding: .5rem;
+    
+  
+}
+
+.details-on-hover h2{
+    color: white;
+    
+}
+
+@media only screen and (max-width:500px){
+    .card-css{
+        height: 400px ;
+        width: 100% ;
+        transition: all 0.5s;
+       
+       
+    }
+    .card-css img{
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+}
