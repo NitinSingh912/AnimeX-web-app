@@ -7,7 +7,7 @@ import "./homepage.css";
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa6";
 import BestReviews from "../BestReviewsPage/BestReviews";
-
+import { Audio } from "react-loader-spinner";
 const HomePage = () => {
   const topReviewAnimes = useContext(contextApi).topReviewAnimes;
 
@@ -15,6 +15,7 @@ const HomePage = () => {
     <>
       <div className="poster">
         <Carousel
+          className="custom-carousel"
           showThumbs={false}
           autoPlay={true}
           transitionTime={3}
@@ -43,8 +44,25 @@ const HomePage = () => {
         </Carousel>
       </div>
       <div className="toprated-css">
-        <h1>TOP RATED</h1>
-        <BestReviews />
+        {topReviewAnimes.length == 0 ? "" : <h1>TOP RATED</h1>}
+        {topReviewAnimes.length === 0 ? (
+          <div className="loader">
+            <div className="insideLoader">
+
+            <Audio
+              height="100"
+              width="100"
+              radius="19"
+              color="green"
+              ariaLabel="loading"
+              wrapperStyle
+              wrapperClass
+              />
+              </div>
+          </div>
+        ) : (
+          <BestReviews />
+        )}
       </div>
     </>
   );

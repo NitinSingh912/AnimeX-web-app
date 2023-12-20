@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { FaStar } from "react-icons/fa6";
+import { Audio } from 'react-loader-spinner'
 const AnimeDetailPage = () => {
   const { id } = useParams();
   const [animeDetails, setAnimeDetails] = useState(null);
@@ -23,7 +24,18 @@ const AnimeDetailPage = () => {
   return (
     <>
       {animeDetails === null ? (
-        ""
+        <div className="animedetail-loader">
+
+       <Audio
+       height="80"
+       width="80"
+       radius="9"
+       color="green"
+       ariaLabel="loading"
+       wrapperStyle
+       wrapperClass
+       />
+       </div>
       ) : (
         <div className="anime-detail-css">
           <div className="content-section">

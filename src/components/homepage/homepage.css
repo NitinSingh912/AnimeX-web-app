@@ -1,78 +1,106 @@
-
-.poster a img{
+.poster a img {
     height: 650px;
     width: 700px;
 }
 
-.poster a{
+.poster a {
     display: block;
     height: 650px;
     z-index: 1;
 }
-.anime-details-css{
+
+.anime-details-css {
     position: absolute;
     z-index: 100;
-    color:white;
-   top: 70px;
-   right: 20px;
-   width: 500px;
+    color: white;
+    top: 70px;
+    right: 20px;
+    width: 500px;
 }
-.anime-details-css h1{
+
+.anime-details-css h1 {
     font-size: 45px;
     color: white;
     font-weight: 900;
     text-align: start;
-    
+
 }
-.anime-details-css >div{
+
+.anime-details-css>div {
     display: flex;
     font-size: 30px;
     gap: 40px;
 }
-.toprated-css{
+
+.toprated-css {
     padding: 40px;
     font-size: 30px;
     color: white;
-   
+
 }
-svg{
+
+svg {
     margin-left: 5px;
 }
 
-@media only screen and (max-width:500px){
-    
-.poster a img{
-    height: 500px;
-    width: 500px;
+.loader {
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-    h1{
+@media only screen and (max-width:660px) {
+    .poster a img {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    .poster a img {
+        height: 350px;
+        width: 500px;
+    }
+
+    .poster a {
+        height: 350px;
+        width: 500px;
+    }
+
+    h1 {
         font-size: 20px;
     }
-    .anime-details-css{
+
+    .anime-details-css {
         position: absolute;
         z-index: 100;
-        color:white;
-       top: 20px;
-       right: 20px;
-       width: 200px;
+        color: white;
+        top: 20px;
+        right: 20px;
+        width: 200px;
     }
-    .anime-details-css h1{
+
+    .anime-details-css h1 {
         font-size: 15px;
         color: white;
         font-weight: 400;
         text-align: start;
-        
+
     }
-    .anime-details-css >div{
+
+    .anime-details-css>div {
         display: flex;
         font-size: 20px;
         gap: 20px;
     }
-    .toprated-css{
+
+    .toprated-css {
         padding: 20px;
         font-size: 20px;
         color: white;
-       
+
     }
 }

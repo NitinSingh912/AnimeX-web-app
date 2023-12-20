@@ -8,7 +8,7 @@
 .content-section {
     width: 80%;
     margin: 5px auto;
-  
+
 }
 
 .img-section {
@@ -41,109 +41,150 @@
 }
 
 .anime-descriptions>div>h2 {
- color: white;
+    color: white;
 }
 
 .anime-descriptions>div>h3 {
     font-size: 25px;
     color: white;
-  
+
 }
-.anime-descriptions p{
+
+.anime-descriptions p {
     margin-top: 5px;
     color: white;
     font-size: 19px;
     letter-spacing: .2px;
     word-spacing: .7px;
 }
-svg{
+
+svg {
     padding-top: 4px;
 }
-.anime-descriptions h4{
-   
+
+.anime-descriptions h4 {
+
     margin-top: 3rem;
     color: white;
     font-size: 30px;
 }
-.anime-descriptions h4 iframe{
+
+.anime-descriptions h4 iframe {
     padding-top: 1rem;
     display: block;
     margin: 0 auto;
     width: 730px;
     height: 420px;
 }
-.anime-descriptions h5,.anime-descriptions h6{
+
+.anime-descriptions h5,
+.anime-descriptions h6 {
     color: white;
     display: flex;
     margin-top: 1rem;
     font-size: 30px;
     gap: 10px;
 }
-.anime-descriptions h5 button ,.anime-descriptions h6 button{
+
+.anime-descriptions h5 button,
+.anime-descriptions h6 button {
     border-radius: 5px;
     border: none;
     padding: 5px;
 }
 
-@media only screen and (max-width:500px){
-    html{
+.animedetail-loader {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:760px) {}
+
+@media only screen and (max-width:500px) {
+
+    html {
         font-size: 9px;
     }
+
+
     .anime-detail-css {
-    margin-top: 6px;
-    width: 100%;
+        margin-top: 2px;
+        width: 100%;
+        min-height: 800px;
     }
+
     .content-section {
         width: 100%;
-        
-      
+        margin: 0;
+        padding: 0;
+    
     }
+    .img-section {
+        width: 95%;
+        margin: 1px auto;
+       
+    }
+    
+
     .img-section>img {
 
         width: 100%;
         height: 300px;
-    
+        border-radius: 10px;
+
+    }
+    .anime-descriptions {
+        width: 95%;
+        margin: 5px auto;
     }
     .anime-descriptions div {
         display: flex;
         margin-top: 2rem;
         gap: 20px;
-    
+
     }
-    .img-section {
-        width: 320px;
-        margin: 1px 6px;
-    }
+
+   
+
     .anime-descriptions>div>h3 {
         font-size: 13px;
         color: white;
-      
+
     }
-    .anime-descriptions p{
+
+    .anime-descriptions p {
         margin-top: 5px;
         color: white;
         font-size: 13px;
         letter-spacing: .1px;
         word-spacing: .5px;
     }
-    .anime-descriptions h4{
-   
+
+    .anime-descriptions h4 {
+
         margin-top: 3rem;
         color: white;
         font-size: 15px;
     }
-    .anime-descriptions h5,.anime-descriptions h6{
+
+    .anime-descriptions h5,
+    .anime-descriptions h6 {
         color: white;
         display: flex;
         margin-top: 1rem;
         font-size: 20px;
         gap: 10px;
     }
-    .anime-descriptions h4 iframe{
+
+    .anime-descriptions h4 iframe {
+        
         padding-top: 1rem;
         display: block;
         margin: 0 auto;
-        width: 250px;
+        width: 370px;
         height: 250px;
     }
 }
